@@ -1,4 +1,4 @@
-#Trainlog router redirect extension
+# Trainlog router redirect extension
 A browser extension for Chromium browsers and Firefox for [Trainlog](https://trainlog.me). It redirects routing requests asking for the new rail router to openrailrouting.kaelon.dev, a replacement instance for Maahl's router which is down at the time of writing. By installing this extension you'll be able to use the new router again.
 
 ## Installation (Firefox)
