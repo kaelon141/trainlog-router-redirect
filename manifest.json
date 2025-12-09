@@ -1,0 +1,21 @@
+{
+    "name": "Trainlog router redirector",
+    "description": "redirect requests sent to the new trainlog router to openrailrouting.kaelon.dev.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "host_permissions": ["https://trainlog.me/", "https://dev.trainlog.me/"],
+    "permissions": ["scripting"],
+    "content_scripts": [
+        {
+            "matches": ["https://trainlog.me/*", "https://dev.trainlog.me/*"],
+            "js": ["injector.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["router-request-patch.js"],
+            "matches": ["https://trainlog.me/*", "https://dev.trainlog.me/*"]
+        }
+    ]
+}
